@@ -17,8 +17,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key: ${{ secrets.ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.SECRET_ACCESS_KEY }}
           application_name: react-test
           environment_name: React-test-env
           version_label: ${{ github.sha }}
